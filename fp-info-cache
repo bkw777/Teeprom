@@ -1,11 +1,4 @@
-897844910483097
-000_LOCAL
-SOIC-28
-Module CMS SOJ 28 pins large
-CMS SOJ
-0
-28
-28
+899160910542097
 000_LOCAL
 SOIC-28W
 28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
@@ -20,6 +13,13 @@ Castellated edge contacts to fit Molex 8878 Socket
 0
 28
 28
+000_LOCAL
+pcb2molex8878_chamfer
+Castellated edge contacts to fit Molex 8878 Socket
+
+0
+0
+0
 Battery_Holders
 Bulgin_BX0036_1xC
 
