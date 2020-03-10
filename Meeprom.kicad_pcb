@@ -162,7 +162,7 @@
     (add_net /~WE)
   )
 
-  (module 000_LOCAL:pcb2molex8878_chamfer (layer Top) (tedit 5E642EC3) (tstamp 5E645B11)
+  (module 000_LOCAL:pcb2molex8878_chamfer locked (layer Top) (tedit 5E642EC3) (tstamp 5E645B11)
     (at 147.2184 99.187)
     (descr "Castellated edge contacts to fit Molex 8878 Socket")
     (solder_mask_margin -0.28)
