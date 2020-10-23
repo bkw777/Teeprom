@@ -6,4 +6,10 @@ K Parallel EEPROM 256Kb
 F http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf
 $ENDCMP
 #
+$CMP R
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
 #End Doc Library
