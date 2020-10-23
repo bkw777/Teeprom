@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name 000_LOCAL)(type Legacy)(uri ${KIPRJMOD}/000_LOCAL.lib)(options "")(descr ""))
+  (lib (name DS05-127-2-02BK-SMT-TR)(type Legacy)(uri /home/bkw/Documents/DataSheets/DS05-127-2-02BK-SMT-TR.lib)(options "")(descr ""))
 )
