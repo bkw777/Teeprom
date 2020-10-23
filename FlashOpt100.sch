@@ -527,16 +527,6 @@ F 3 "" H 4380 4650 50  0001 C CNN
 	1    4380 4650
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	4800 5240 4800 5900
-Wire Bus Line
-	8420 2550 8420 5240
-Wire Bus Line
-	5210 2550 5210 5240
-Wire Bus Line
-	3390 2550 3390 5240
-Wire Bus Line
-	6200 2550 6200 5240
 $Comp
 L power:GND #PWR0107
 U 1 1 5FA2EEF3
@@ -546,6 +536,217 @@ F 1 "GND" H 7390 4910 50  0000 C CNN
 F 2 "" H 7390 5050 50  0001 C CNN
 F 3 "" H 7390 5050 50  0001 C CNN
 	1    7390 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 000_LOCAL:29C256 J2
+U 1 1 5FAC773B
+P 9440 3550
+F 0 "J2" H 9440 4800 50  0000 C CNN
+F 1 "29F256" H 9440 4890 50  0000 C CNN
+F 2 "000_LOCAL:4x7_prg_2.0mm_female_staggered" H 9440 3550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0014.pdf" H 9440 3550 50  0001 C CNN
+	1    9440 3550
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	8570 3750 8670 3850
+Entry Wire Line
+	8570 3850 8670 3950
+Entry Wire Line
+	8570 3950 8670 4050
+Entry Wire Line
+	8570 3450 8670 3550
+Entry Wire Line
+	8570 3550 8670 3650
+Entry Wire Line
+	8570 3650 8670 3750
+Entry Wire Line
+	8570 3150 8670 3250
+Entry Wire Line
+	8570 3250 8670 3350
+Entry Wire Line
+	8570 3350 8670 3450
+Entry Wire Line
+	8570 2850 8670 2950
+Entry Wire Line
+	8570 2950 8670 3050
+Entry Wire Line
+	8570 3050 8670 3150
+Entry Wire Line
+	8570 2550 8670 2650
+Entry Wire Line
+	8570 2650 8670 2750
+Entry Wire Line
+	8570 2750 8670 2850
+Text Label 8670 2650 0    50   ~ 0
+A0
+Text Label 8670 2750 0    50   ~ 0
+A1
+Text Label 8670 2850 0    50   ~ 0
+A2
+Text Label 8670 2950 0    50   ~ 0
+A3
+Text Label 8670 3050 0    50   ~ 0
+A4
+Text Label 8670 3150 0    50   ~ 0
+A5
+Text Label 8670 3250 0    50   ~ 0
+A6
+Text Label 8670 3350 0    50   ~ 0
+A7
+Text Label 8670 3450 0    50   ~ 0
+A8
+Text Label 8670 3550 0    50   ~ 0
+A9
+Text Label 8670 3650 0    50   ~ 0
+A10
+Text Label 8670 3750 0    50   ~ 0
+A11
+Text Label 8670 3850 0    50   ~ 0
+A12
+Text Label 8670 3950 0    50   ~ 0
+A13
+Text Label 8670 4050 0    50   ~ 0
+A14
+Wire Wire Line
+	8670 4050 9040 4050
+Wire Wire Line
+	8670 3950 9040 3950
+Wire Wire Line
+	8670 3850 9040 3850
+Wire Wire Line
+	8670 3750 9040 3750
+Wire Wire Line
+	8670 3650 9040 3650
+Wire Wire Line
+	8670 3550 9040 3550
+Wire Wire Line
+	8670 3450 9040 3450
+Wire Wire Line
+	8670 3350 9040 3350
+Wire Wire Line
+	8670 3250 9040 3250
+Wire Wire Line
+	8670 3150 9040 3150
+Wire Wire Line
+	8670 3050 9040 3050
+Wire Wire Line
+	8670 2950 9040 2950
+Wire Wire Line
+	8670 2850 9040 2850
+Wire Wire Line
+	8670 2750 9040 2750
+Wire Wire Line
+	8670 2650 9040 2650
+Entry Wire Line
+	8570 4150 8670 4250
+Entry Wire Line
+	8570 4350 8670 4450
+Entry Wire Line
+	8570 4250 8670 4350
+Text Label 8670 4450 0    50   ~ 0
+~OE
+Text Label 8670 4350 0    50   ~ 0
+~CE
+Text Label 8670 4250 0    50   ~ 0
+~WE
+Wire Bus Line
+	8570 5240 8420 5240
+Connection ~ 8420 5240
+Wire Wire Line
+	10170 2650 9840 2650
+Entry Wire Line
+	10170 2650 10270 2550
+Wire Wire Line
+	10170 2750 9840 2750
+Entry Wire Line
+	10170 2750 10270 2650
+Wire Wire Line
+	10170 2850 9840 2850
+Entry Wire Line
+	10170 2850 10270 2750
+Wire Wire Line
+	10170 2950 9840 2950
+Entry Wire Line
+	10170 2950 10270 2850
+Wire Wire Line
+	10170 3050 9840 3050
+Entry Wire Line
+	10170 3050 10270 2950
+Wire Wire Line
+	10170 3150 9840 3150
+Entry Wire Line
+	10170 3150 10270 3050
+Wire Wire Line
+	10170 3250 9840 3250
+Entry Wire Line
+	10170 3250 10270 3150
+Wire Wire Line
+	10170 3350 9840 3350
+Entry Wire Line
+	10170 3350 10270 3250
+Text Label 10170 2650 2    50   ~ 0
+D0
+Text Label 10170 2750 2    50   ~ 0
+D1
+Text Label 10170 2850 2    50   ~ 0
+D2
+Text Label 10170 2950 2    50   ~ 0
+D3
+Text Label 10170 3050 2    50   ~ 0
+D4
+Text Label 10170 3150 2    50   ~ 0
+D5
+Text Label 10170 3250 2    50   ~ 0
+D6
+Text Label 10170 3350 2    50   ~ 0
+D7
+Wire Bus Line
+	8570 5240 10270 5240
+Connection ~ 8570 5240
+Wire Wire Line
+	8670 4450 9040 4450
+Wire Wire Line
+	8670 4350 9040 4350
+Wire Wire Line
+	8670 4250 9040 4250
+Wire Bus Line
+	4800 5240 4800 5900
+Wire Bus Line
+	8420 2550 8420 5240
+Wire Bus Line
+	5210 2550 5210 5240
+Wire Bus Line
+	10270 2550 10270 5240
+Wire Bus Line
+	3390 2550 3390 5240
+Wire Bus Line
+	6200 2550 6200 5240
+Wire Bus Line
+	8570 2550 8570 5240
+Text Notes 9060 2140 0    50   ~ 0
+Programming Port\n29F256/29C256 pinout\nin custom pin header
+$Comp
+L power:GND #PWR0110
+U 1 1 5FB3E48A
+P 9440 4650
+F 0 "#PWR0110" H 9440 4400 50  0001 C CNN
+F 1 "GND" H 9440 4510 50  0000 C CNN
+F 2 "" H 9440 4650 50  0001 C CNN
+F 3 "" H 9440 4650 50  0001 C CNN
+	1    9440 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0111
+U 1 1 5FB3F6CB
+P 9440 2450
+F 0 "#PWR0111" H 9440 2300 50  0001 C CNN
+F 1 "VCC" H 9530 2450 50  0000 C CNN
+F 2 "" H 9440 2450 50  0001 C CNN
+F 3 "" H 9440 2450 50  0001 C CNN
+	1    9440 2450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
