@@ -1,4 +1,4 @@
-(module 4x7_prg_2.0mm_female_staggered (layer F.Cu) (tedit 5F92FF76)
+(module 4x7_prg_2.0mm_female_staggered (layer F.Cu) (tedit 5F934598)
   (descr "Through hole straight pin header, 2x07, 2.00mm pitch, double rows")
   (tags "Through hole pin header THT 2x07 2.00mm double row")
   (fp_text reference REF** (at 0 6 unlocked) (layer F.SilkS) hide
@@ -38,9 +38,9 @@
   (pad 25 thru_hole circle (at 8.95 -4) (size 1.2 1.2) (drill 0.75) (layers *.Cu *.Mask))
   (pad 28 thru_hole circle (at 11.05 -6) (size 1.2 1.2) (drill 0.75) (layers *.Cu *.Mask))
   (pad 21 thru_hole circle (at 8.95 0) (size 1.2 1.2) (drill 0.75) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/000_LOCAL.pretty/3d/PinHeader_2x07_P2.00mm_Vertical.step_x
-    (offset (xyz 9 6 -4.5))
+  (model ${KIPRJMOD}/FlashOpt100_programming_adapter.step_x
+    (offset (xyz 0 0 -6.096))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 0 0 -90))
   )
 )
