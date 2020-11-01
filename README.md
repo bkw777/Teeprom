@@ -25,12 +25,12 @@ The disadvantages are:
 The need to build the programming adapter for the flash board pretty evenly cancels out with the need to get and hook up an soic-28 test clip for the eeprom board. Though the programming adapter is easier and safer to use once built. It's polarity keyed at least between the adapter and the board.
 
 FlashOpt100 parts:  
-PCB https://oshpark.com/shared_projects/Axd3MxLI  
+PCB https://oshpark.com/shared_projects/pNQU3hn5  
 BOM https://www.digikey.com/short/zn0w7q  
 Carrier https://www.digikey.com/short/zn021p  
 
 FlashOpt100 programming adapter parts:  
-PCB https://oshpark.com/shared_projects/JHvfBc2m  
+PCB https://oshpark.com/shared_projects/LdyinNKK  
 BOM https://www.digikey.com/short/zn021p  
 
 ![render](FlashOpt100_1.jpg)
