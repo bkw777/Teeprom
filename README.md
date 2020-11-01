@@ -8,7 +8,7 @@ Teeprom and Meeprom both look like this but have different pinouts.
 
 ![render](Teeprom.jpg)
 
-The the source CAD model for the carrier, and the blank PCB template, are here: [pcb2molex8878](http://github.com/aljex/pcb2molex8878)
+The the source CAD model for the carrier, and the blank PCB template, are here: [pcb2molex8878](http://github.com/aljex/pcb2molex8878)  
 You can use that blank pcb as the starting point for other projects to fit in the same kind of socket.
 
 ----
