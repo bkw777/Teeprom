@@ -12,7 +12,6 @@ The the source CAD model for the carrier, and the blank PCB template, are here: 
 You can use that blank pcb as the starting point for other projects to fit in the same kind of socket.
 
 ----
-
 # FlashOpt100
 aka "Teeprom 2.0, The Overkilling"
 
@@ -33,7 +32,7 @@ BOM https://www.digikey.com/short/zn0w7q
 Carrier https://www.digikey.com/short/zn021p  
 
 ### FlashOpt100 programming adapter parts:  
-PCB https://oshpark.com/shared_projects/LdyinNKK  
+PCB (Removed. Pinout was wrong. Fixed version is coming.) <!-- https://oshpark.com/shared_projects/LdyinNKK -->  
 BOM https://www.digikey.com/short/zn021p  
 
 ![render](FlashOpt100_1.jpg)
@@ -41,4 +40,3 @@ BOM https://www.digikey.com/short/zn021p
 ![render](FlashOpt100_programming_adapter_1.jpg)
 ![render](FlashOpt100_programming_adapter_2.jpg)
 ![render](FlashOpt100_programming_adapter_4.jpg)
-
