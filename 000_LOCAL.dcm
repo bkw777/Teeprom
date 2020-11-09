@@ -12,10 +12,21 @@ K FLASH EEPROM 256 KiBit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/doc0014.pdf
 $ENDCMP
 #
+$CMP 29F010-TSOP-SP
+D Flash EEProm 128Ko (TSOP 32 pack.) 5V prog
+K EEPROM FLASH 128KO
+$ENDCMP
+#
 $CMP 29F256
 D FLASH 256 KiBit
 K FLASH 256 KiBit
 F http://datasheet.octopart.com/D27256-2-Intel-datasheet-17852618.pdf
+$ENDCMP
+#
+$CMP FlashOpt100_PRG_4x7
+D Generic connector, double row, 02x14, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
 $ENDCMP
 #
 $CMP R
@@ -24,7 +35,7 @@ K R res resistor
 F ~
 $ENDCMP
 #
-$CMP SST39SF010
+$CMP SST39SF010_PLCC_DIP
 D Silicon Storage Technology (SSF) 128k x 8 Flash ROM
 K 128k flash rom
 F http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf
