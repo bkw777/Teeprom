@@ -41,4 +41,4 @@ BOM https://www.digikey.com/short/zn021p
 ![render](FlashOpt100_2.jpg)
 ![render](FlashOpt100_programming_adapter_1.jpg)
 ![render](FlashOpt100_programming_adapter_2.jpg)
-![render](FlashOpt100_programming_adapter_4.jpg)
+![render](FlashOpt100_programming_adapter_3.jpg)
