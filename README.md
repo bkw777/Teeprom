@@ -1,12 +1,15 @@
 # Teeprom / Meeprom
 
+
+![Teeprom render](Teeprom.jpg)
+
 [Teeprom](http://tandy.wiki/Teeprom) is an EEPROM module for Tandy Model 100, 102, & 200 protable computers.
+
+
+![Meeprom render](Meeprom.jpg)
 
 [Meeprom](http://tandy.wiki/Meeprom) is an EEPROM module for any Molex 8878 socket that has a standard 27C256 pinout. (Tandy Model 600, Epson PX-8, PX-4, others?)
 
-Teeprom and Meeprom both look like this but have different pinouts.
-
-![render](Teeprom.jpg)
 
 The the source CAD model for the carrier, and the blank PCB template, are here: [pcb2molex8878](http://github.com/aljex/pcb2molex8878)  
 You can use that blank pcb as the starting point for other projects to fit in the same kind of socket.
@@ -37,8 +40,8 @@ Carrier https://www.digikey.com/short/zn021p
 PCB https://oshpark.com/shared_projects/IEB4EYu2  
 BOM https://www.digikey.com/short/zn021p  
 
-![render](FlashOpt100_1.jpg)
-![render](FlashOpt100_2.jpg)
-![render](FlashOpt100_programming_adapter_1.jpg)
-![render](FlashOpt100_programming_adapter_2.jpg)
-![render](FlashOpt100_programming_adapter_3.jpg)
+![FlashOpt100 render](FlashOpt100_1.jpg)
+![FlashOpt100 render](FlashOpt100_2.jpg)
+![FlashOpt100 render](FlashOpt100_programming_adapter_1.jpg)
+![FlashOpt100 render](FlashOpt100_programming_adapter_2.jpg)
+![FlashOpt100 render](FlashOpt100_programming_adapter_3.jpg)

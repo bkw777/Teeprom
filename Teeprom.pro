@@ -1,4 +1,4 @@
-update=Sat 07 Mar 2020 10:49:43 PM EST
+update=Tue 16 Mar 2021 07:20:24 PM EDT
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/home/bkw/Documents/TRS-80/Model 100/Teeprom/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -22,21 +32,18 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=0
-MinTrackWidth=0.1524
-MinViaDiameter=0.508
-MinViaDrill=0.254
-MinMicroViaDiameter=0.508
-MinMicroViaDrill=0.1524
-MinHoleToHole=0.1524
-TrackWidth1=0.2032
-TrackWidth2=0.2032
-TrackWidth3=0.4064
-ViaDiameter1=0.508
-ViaDrill1=0.254
-ViaDiameter2=0.508
-ViaDrill2=0.254
-dPairWidth1=0.2032
-dPairGap1=0.254
+MinTrackWidth=0.2
+MinViaDiameter=0.5
+MinViaDrill=0.3
+MinMicroViaDiameter=0.5
+MinMicroViaDrill=0.3
+MinHoleToHole=0.3
+TrackWidth1=0.2
+TrackWidth2=0.4
+ViaDiameter1=0.5
+ViaDrill1=0.3
+dPairWidth1=0.2
+dPairGap1=0.3
 dPairViaGap1=0.25
 SilkLineWidth=0.0254
 SilkTextSizeV=0.4572
@@ -59,7 +66,7 @@ OthersTextSizeThickness=0.01
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0
-SolderMaskMinWidth=0
+SolderMaskMinWidth=0.22
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
@@ -231,22 +238,12 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2032
-TrackWidth=0.2032
-ViaDiameter=0.508
-ViaDrill=0.254
-uViaDiameter=0.508
-uViaDrill=0.254
-dPairWidth=0.2032
-dPairGap=0.254
+Clearance=0.2
+TrackWidth=0.2
+ViaDiameter=0.5
+ViaDrill=0.3
+uViaDiameter=0.5
+uViaDrill=0.3
+dPairWidth=0.2
+dPairGap=0.3
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=/home/bkw/Documents/TRS-80/Model 100/Teeprom/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1

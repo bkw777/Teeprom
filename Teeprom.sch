@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Tandy Model 100/102/200 Option ROM EEPROM"
-Date ""
+Date "2021-05-10"
 Rev ""
 Comp ""
 Comment1 ""
@@ -17,8 +17,8 @@ $Comp
 L 000_LOCAL:28C256 U1
 U 1 1 5D231C6F
 P 7190 3550
-F 0 "U1" H 7190 4900 50  0000 C CNN
-F 1 "28C256" H 7190 4800 50  0000 C CNN
+F 0 "U1" H 7190 5010 50  0000 C CNN
+F 1 "28C256" H 7190 4930 50  0000 C CNN
 F 2 "000_LOCAL:SOIC-28W" H 7190 3550 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 7190 3550 50  0001 C CNN
 	1    7190 3550
@@ -60,10 +60,6 @@ Entry Wire Line
 	6200 2650 6300 2750
 Entry Wire Line
 	6200 2750 6300 2850
-Entry Wire Line
-	6200 2350 6300 2450
-Text Label 6300 2450 0    50   ~ 0
-VCC
 Text Label 6300 2650 0    50   ~ 0
 A0
 Text Label 6300 2750 0    50   ~ 0
@@ -98,10 +94,6 @@ Text Label 6300 4350 0    50   ~ 0
 ~OE
 Text Label 6300 4450 0    50   ~ 0
 ~CE
-Entry Wire Line
-	6200 4550 6300 4650
-Text Label 6300 4650 0    50   ~ 0
-VSS
 Wire Wire Line
 	7920 2650 7590 2650
 Entry Wire Line
@@ -138,17 +130,13 @@ $Comp
 L 000_LOCAL:R R1
 U 1 1 5D2BF7AB
 P 6650 4930
-F 0 "R1" V 6570 4860 50  0000 C CNN
-F 1 "47k" V 6570 5000 50  0000 C CNN
-F 2 "000_LOCAL:R_0805_2012Metric" H 6650 4930 50  0001 C CNN
+F 0 "R1" V 6560 5020 50  0000 C CNN
+F 1 "47k" V 6560 4870 50  0000 C CNN
+F 2 "000_LOCAL:R_0805" H 6650 4930 50  0001 C CNN
 F 3 "~" H 6650 4930 50  0001 C CNN
 	1    6650 4930
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
-Wire Bus Line
-	6200 5240 8020 5240
-Wire Wire Line
-	6300 4650 7190 4650
 Wire Wire Line
 	6300 4450 6790 4450
 Wire Wire Line
@@ -183,8 +171,6 @@ Wire Wire Line
 	6300 2750 6790 2750
 Wire Wire Line
 	6300 2650 6790 2650
-Wire Wire Line
-	6300 2450 7190 2450
 Text Label 7920 2650 2    50   ~ 0
 D0
 Text Label 7920 2750 2    50   ~ 0
@@ -237,10 +223,6 @@ Entry Wire Line
 	3390 2650 3490 2750
 Entry Wire Line
 	3390 2750 3490 2850
-Entry Wire Line
-	3390 2350 3490 2450
-Text Label 3490 2450 0    50   ~ 0
-VCC
 Text Label 3490 2650 0    50   ~ 0
 A0
 Text Label 3490 2750 0    50   ~ 0
@@ -275,10 +257,6 @@ Text Label 3490 4350 0    50   ~ 0
 ~OE
 Text Label 3490 4450 0    50   ~ 0
 ~CE
-Entry Wire Line
-	3390 4550 3490 4650
-Text Label 3490 4650 0    50   ~ 0
-VSS
 Wire Wire Line
 	5110 2650 4780 2650
 Entry Wire Line
@@ -314,8 +292,6 @@ Entry Wire Line
 Wire Bus Line
 	3390 5240 5210 5240
 Wire Wire Line
-	3490 4650 4380 4650
-Wire Wire Line
 	3490 4450 3980 4450
 Wire Wire Line
 	3490 4350 3980 4350
@@ -349,8 +325,6 @@ Wire Wire Line
 	3490 2750 3980 2750
 Wire Wire Line
 	3490 2650 3980 2650
-Wire Wire Line
-	3490 2450 4380 2450
 Text Label 5110 2650 2    50   ~ 0
 D0
 Text Label 5110 2750 2    50   ~ 0
@@ -371,39 +345,89 @@ $Comp
 L 000_LOCAL:Tandy_100_102_200_option_rom J1
 U 1 1 5E6792DF
 P 4380 3550
-F 0 "J1" H 4400 4850 50  0000 C CNN
-F 1 "Tandy_100_102_200_option_rom" H 4400 4750 50  0000 C CNN
-F 2 "000_LOCAL:pcb2molex8878" H 4380 3550 50  0001 C CNN
+F 0 "J1" H 4380 4940 50  0000 C CNN
+F 1 "Tandy_100_102_200_option_rom" H 4380 4850 50  0000 C CNN
+F 2 "000_LOCAL:Molex78805_PCB" H 4380 3550 50  0001 C CNN
 F 3 "" H 4380 3550 50  0001 C CNN
 	1    4380 3550
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	5210 5240 6200 5240
 Connection ~ 5210 5240
-Connection ~ 6200 5240
 Entry Wire Line
 	6200 4830 6300 4930
-Entry Wire Line
-	6200 4930 6300 5030
 Text Label 6300 4930 0    50   ~ 0
-VCC
-Text Label 6300 5030 0    50   ~ 0
 ~WE
 Wire Wire Line
 	6300 4930 6500 4930
 Wire Wire Line
-	6300 5030 6800 5030
-Wire Wire Line
-	6800 5030 6800 4930
-Wire Wire Line
 	6300 4250 6790 4250
+NoConn ~ 3980 4250
+$Comp
+L power:VCC #PWR?
+U 1 1 609B63B2
+P 4380 2450
+F 0 "#PWR?" H 4380 2300 50  0001 C CNN
+F 1 "VCC" H 4480 2530 50  0000 C CNN
+F 2 "" H 4380 2450 50  0001 C CNN
+F 3 "" H 4380 2450 50  0001 C CNN
+	1    4380 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 609B6F25
+P 7190 2450
+F 0 "#PWR?" H 7190 2300 50  0001 C CNN
+F 1 "VCC" H 7290 2530 50  0000 C CNN
+F 2 "" H 7190 2450 50  0001 C CNN
+F 3 "" H 7190 2450 50  0001 C CNN
+	1    7190 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 609B93B5
+P 6800 4930
+F 0 "#PWR?" H 6800 4780 50  0001 C CNN
+F 1 "VCC" V 6800 5120 50  0000 C CNN
+F 2 "" H 6800 4930 50  0001 C CNN
+F 3 "" H 6800 4930 50  0001 C CNN
+	1    6800 4930
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609BD5F9
+P 4380 4650
+F 0 "#PWR?" H 4380 4400 50  0001 C CNN
+F 1 "GND" H 4420 4440 50  0000 C CNN
+F 2 "" H 4380 4650 50  0001 C CNN
+F 3 "" H 4380 4650 50  0001 C CNN
+	1    4380 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609BDC96
+P 7190 4650
+F 0 "#PWR?" H 7190 4400 50  0001 C CNN
+F 1 "GND" H 7230 4440 50  0000 C CNN
+F 2 "" H 7190 4650 50  0001 C CNN
+F 3 "" H 7190 4650 50  0001 C CNN
+	1    7190 4650
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	5210 5240 6200 5240
+Connection ~ 6200 5240
+Wire Bus Line
+	6200 5240 8020 5240
 Wire Bus Line
 	8020 2550 8020 5240
 Wire Bus Line
 	5210 2550 5210 5240
 Wire Bus Line
-	3390 2350 3390 5240
+	6200 2550 6200 5240
 Wire Bus Line
-	6200 2350 6200 5240
+	3390 2550 3390 5240
 $EndSCHEMATC
