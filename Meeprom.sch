@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "28C256 EEPROM to Molex 78805 socket with 27C256 pinout"
-Date "2021-05-20"
-Rev ""
+Date "2021-05-22"
+Rev "004"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -347,7 +347,7 @@ U 1 1 5E6792DF
 P 4380 3550
 F 0 "J1" H 4380 4950 50  0000 C CNN
 F 1 "Molex 78805 socket 27C256 pinout" H 4380 4860 50  0000 C CNN
-F 2 "000_LOCAL:Molex78805_PCB" H 4380 3550 50  0001 C CNN
+F 2 "000_LOCAL:Molex78802_PCB_28" H 4380 3550 50  0001 C CNN
 F 3 "" H 4380 3550 50  0001 C CNN
 	1    4380 3550
 	1    0    0    -1  

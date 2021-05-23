@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Tandy Model 100/102/200 Option ROM EEPROM"
-Date "2021-05-10"
-Rev ""
+Title "Flash-based Tandy Model 100/200 Option ROM"
+Date "2021-05-22"
+Rev "004"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -233,7 +233,7 @@ U 1 1 5E6792DF
 P 4500 3500
 F 0 "J1" H 4500 4810 50  0000 C CNN
 F 1 "Tandy_100_102_200_option_rom" H 4500 4910 50  0000 C CNN
-F 2 "000_LOCAL:pcb2molex8878" H 4500 3500 50  0001 C CNN
+F 2 "000_LOCAL:Molex78802_PCB_28" H 4500 3500 50  0001 C CNN
 F 3 "" H 4500 3500 50  0001 C CNN
 	1    4500 3500
 	1    0    0    -1  
