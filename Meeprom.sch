@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "28C256 EEPROM to Molex 8878 socket 27256 pinout"
-Date ""
+Title "28C256 EEPROM to Molex 78805 socket with 27C256 pinout"
+Date "2021-05-20"
 Rev ""
 Comp ""
 Comment1 ""
@@ -397,6 +397,9 @@ F 3 "" H 6750 4930 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	5210 5240 6200 5240
+Connection ~ 6200 5240
+Wire Bus Line
+	6200 5240 8020 5240
 Wire Bus Line
 	5210 2550 5210 5240
 Wire Bus Line
@@ -405,7 +408,4 @@ Wire Bus Line
 	6200 2550 6200 5240
 Wire Bus Line
 	3390 2550 3390 5240
-Connection ~ 6200 5240
-Wire Bus Line
-	6200 5240 8020 5240
 $EndSCHEMATC
