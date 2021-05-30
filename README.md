@@ -15,3 +15,8 @@
 or
 [Teeprom 2.0, The Overkilling](Teeprom2.md)  
 Version of Teeprom that uses a 29F010 flash instead of a 28C256 eeprom.
+
+# MEE2732
+![](MEE2732.jpg)
+[MEE2732](MEE2732.md)  
+24-pin 2732 pinout
