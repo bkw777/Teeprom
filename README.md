@@ -6,7 +6,7 @@
 # Meeprom
 ![Meeprom render](Meeprom.jpg)
 
-[Meeprom](http://tandy.wiki/Meeprom) is an EEPROM module for any other Molex 78805 socket that expects a 27C256 chip. Not for Model 100/200. Examples: Tandy Model 600, Epson PX-4, PX-8, Intermec 9440 & other similar handheld terminals, various industrial equipment like Allen Bradley SLC-500 PLCs.
+[Meeprom](http://tandy.wiki/Meeprom) is an EEPROM module for any other Molex 78805 socket that expects a 27C256 chip. Not for Model 100/200. Examples: Tandy Model 600, Kyotronic KC-85, Epson PX-4, PX-8, Intermec 9440 & other similar handheld terminals, various industrial equipment like Allen Bradley SLC-500 PLCs.
 
 # References
 [Molex78802_Module](https://github.com/bkw777/Molex78802_Module)  
