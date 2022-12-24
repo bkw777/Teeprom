@@ -28,5 +28,6 @@ PCB (pending)
 BOM https://www.digikey.com/short/zn021p  
 
 ![FlashOpt100 render](FlashOpt100.jpg)
+![FlashOpt100 render](FlashOpt100.2.jpg)
 ![FlashOpt100 render](FlashOpt100_programming_adapter.jpg)
 ![FlashOpt100 render](FlashOpt100.programming.jpg)
