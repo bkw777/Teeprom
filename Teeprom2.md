@@ -19,12 +19,12 @@ Current status of this version:
 The programming adapter connection doesn't work well. Always a few pins don't make good connection. This is probably fixable by just adjusting the offset positions of the holes some more.
 
 ### FlashOpt100 parts:  
-PCB https://oshpark.com/shared_projects/mMOTuG3f  
+PCB (pending)  
 BOM https://www.digikey.com/short/zn0w7q  
-Carrier https://www.digikey.com/short/zn021p  
+Carrier http://shpws.me/SGGB  
 
 ### FlashOpt100 programming adapter parts:  
-PCB https://oshpark.com/shared_projects/IEB4EYu2  
+PCB (pending)  
 BOM https://www.digikey.com/short/zn021p  
 
 ![FlashOpt100 render](FlashOpt100.jpg)
