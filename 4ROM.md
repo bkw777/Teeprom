@@ -21,18 +21,20 @@ Current status of this version:
 Original programming adapter used an incorrect pinout. Waiting for current version to test.
 
 There are 2 versions so far,  
-4ROM_100 is only for TANDY 100, 102, & 200  
-4ROM_STD is for everything else, like TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.
+4ROM_100 is only for TANDY 100, 102, & 200, same as Teeprom.
+4ROM_STD is for everything else, Same as Meeprom. Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.
 
-The parts are the same for bothe versions. The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 200 have a non-standard pinout.
+The parts other than the PCB are the same for both 100 and STD versions.  
+The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 200 have a non-standard pinout.
 
-The same programming adapter is used for both. Both versions have the same flash chip, and the same pinout from the chip to the programming adapter headers.
+The same programming adapter is used for both 100 and STD.
 
-To write to the chip:
+To write to the chip:  
+* Put the programming adapter into a programmer.  
+* Remove the 4ROM PCB from the carrier and connect to the programming adapter.  
 * Slect a bank with the dip switches.  
-* Remove the 4ROM board from the plastic carrier, install onto the programming adapter, put the programming adapter into a programmer.
-* Tell the programmer to use device "SST39SF010A" and ignore size mismatch.
-* Write one 32K rom image.
+* Tell the programmer to use device "SST39SF010A" and ignore size mismatch.  
+* Write a single 32K rom image.
 
 ### 4ROM_100 parts:  
 PCB (pending verification)  
