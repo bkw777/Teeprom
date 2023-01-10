@@ -3,6 +3,7 @@
   (tedit 5FA93826)
   (descr "Through hole straight pin header, 2x07, 2.00mm pitch, double rows")
   (tags "Through hole pin header THT 2x07 2.00mm double row")
+  (solder_mask_margin -0.15)
   (attr through_hole)
   (fp_text reference "REF**" (at 0 6.06 unlocked) (layer "F.SilkS") hide
     (effects (font (size 1 1) (thickness 0.15)))
@@ -48,6 +49,6 @@
   (model "${KIPRJMOD}/FlashOpt100_programming_adapter.step"
     (offset (xyz 0 0 -6))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 -90))
+    (rotate (xyz 0 0 0))
   )
 )
