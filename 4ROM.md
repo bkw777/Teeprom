@@ -51,5 +51,5 @@ PCB (pending verification)
 BOM https://www.digikey.com/short/f3jhw9v1
 
 ![4ROM_100 render](4ROM_100.jpg)
-![4ROM_100 Programming Adapter render](4ROM_100_programming_adapter.jpg)
+![4ROM_100 Programming Adapter render](4ROM_programming_adapter.jpg)
 ![4ROM_100 on Programming Adapter render](4ROM_100.programming.jpg)
