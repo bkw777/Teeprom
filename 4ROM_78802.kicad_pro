@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.75,
-          "height": 1.2,
-          "width": 1.2
+          "drill": 0.0,
+          "height": 0.8,
+          "width": 1.0
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -354,7 +354,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "4ROM_100.kicad_pro",
+    "filename": "4ROM_STD_sw.kicad_pro",
     "version": 1
   },
   "net_settings": {

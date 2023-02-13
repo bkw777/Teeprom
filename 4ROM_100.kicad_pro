@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.15239999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -123,6 +123,7 @@
         0.0,
         0.2,
         0.3,
+        0.4,
         0.6
       ],
       "via_dimensions": [
@@ -354,7 +355,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "FlashOpt100.kicad_pro",
+    "filename": "4ROM_100ss.kicad_pro",
     "version": 1
   },
   "net_settings": {
