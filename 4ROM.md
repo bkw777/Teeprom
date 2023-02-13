@@ -8,13 +8,13 @@ BOM https://www.digikey.com/short/whn7w258
 Carrier http://shpws.me/SGGB  
 
 ### 4ROM_78802 parts:  
-PCB (pending verification)  
-BOM https://www.digikey.com/short/whn7w258  
+PCB https://www.pcbway.com/project/shareproject/4ROM_78802_714ecf32.html  
+BOM https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=66e12c3f20 or https://www.digikey.com/short/whn7w258  
 Carrier http://shpws.me/SGGB  
 
 ### 4ROM Programming Adapter parts:  
-PCB (pending verification)  
-BOM https://www.digikey.com/short/f3jhw9v1
+PCB https://www.pcbway.com/project/shareproject/4ROM_Programming_Adapter_fc156337.html  
+BOM https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=a770931c82 or https://www.digikey.com/short/f3jhw9v1
 
 
 This is a version of Teeprom and Meeprom that uses a 128K 29F010 flash instead of a 32K 28C256 eeprom.
@@ -32,9 +32,9 @@ The disadvantages are:
 * The board has more parts and is more difficult to solder.
 
 There are 2 versions so far,  
-4ROM_100 is only for TANDY 100, 102, & 200, same as Teeprom. This version is not tested yet.  
+'''4ROM_100''' is only for TANDY 100, 102, & 200, same as Teeprom. This version is not tested yet.  
 
-4ROM_78802 is for everything else, Same as Meeprom. Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.  
+'''4ROM_78802''' is for everything else, Same as Meeprom. Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.  
 This version IS tested and working.
 
 The parts other than the PCB are the same for both 100 and 78802 versions.  
@@ -42,15 +42,27 @@ The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 2
 
 The same programming adapter is used for both 100 and 78802.
 
+<!-- 
+![4ROM_100 render](4ROM_100.jpg)
+![4ROM_100 Programming Adapter render](4ROM_programming_adapter.jpg)
+![4ROM_100 on Programming Adapter render](4ROM_100.programming.jpg)
+-->
+
+![4ROM_78802 render](4ROM_78802.jpg)
+![4ROM Programming Adapter render](4ROM_programming_adapter.jpg)
+![4ROM_78802 on Programming Adapter render](4ROM_78802.programming.jpg)
+
+
 ##To write to the chip:  
-* Put the programming adapter into a programmer.  
-* Remove the 4ROM PCB from the carrier and connect it to the programming adapter by the center pins.  
-* Select the desired bank with the slide switch on the 4ROM.  
+* Put the 4ROM programming adapter into a programmer.  
+* Remove the 4ROM PCB from the carrier and connect it to the programming adapter by the center pins. You don't need to push the pcb all the way down. Just get the pins into the holes at all and that is good. It should be stiff.  
+* Select the desired bank number with the slide switch on the 4ROM.  
 * Tell the programmer to use device "SST39SF010A", ignore size mismatch, not to automatically erase the whole chip before writing.  
 * Write a single 32K rom image.
 
 
-Test the pin connections, just to verify that the board is soldered correctly and all of the programming adapter pins are making a good connection.  
+###Test the pin connections  
+Just to verify that the board is soldered correctly and all of the programming adapter pins are making a good connection.  
 It should say pins 1 and 2 are bad, and nothing else.  
 ```
 $ minipro -p 'SST39SF010A' -z
@@ -65,7 +77,8 @@ If/when minipro is updated to fix that bug, then this test should say bad contac
 Similarly if you're using the Windows app look for pins 2 and 3 to be missing but no other errors.  
 The missing pins are because the two highest address bits A15 and A16 that exist on the flash chip are not connected to anything but the bank-select logic on the 4ROM board.
 
-Erase the whole chip one time before writing any of the individual banks.  
+###Erase the whole chip
+Only one time before writing any the individual banks. You will be telling the programmer NOT to erase the chip automatically before writing the individual banks, so you want to do it one time before hand just to clean the slate.
 ```
 $ minipro -p 'SST39SF010A' -u -E
 Found TL866II+ 04.2.132 (0x284)
@@ -74,6 +87,7 @@ Erasing... 0.40Sec OK
 $
 ```
 
+###Write one bank  
 Select position "1" on the slide switch, and write one 32K rom image, with options to tell minipro NOT to erase the chip before the write, to unlock the chip before writing, to re-lock it after writing, and ignore the size mis-match from writing only 32K when 128K is expected.  
 ```
 $ minipro -p 'SST39SF010A' -u -P -s -e -w MULTIPLAN.rom
@@ -86,6 +100,7 @@ Verification OK
 $
 ```
 
+### Write another bank  
 Select position "2" on the slide switch, and repeat to write another rom.  
 ```
 $ minipro -p 'SST39SF010A' -u -P -s -e -w BASIC.rom
@@ -97,14 +112,4 @@ Reading Code...  0.25Sec  OK
 Verification OK
 $
 ```
-
-<!-- 
-![4ROM_100 render](4ROM_100.jpg)
-![4ROM_100 Programming Adapter render](4ROM_programming_adapter.jpg)
-![4ROM_100 on Programming Adapter render](4ROM_100.programming.jpg)
--->
-
-![4ROM_78802 render](4ROM_78802.jpg)
-![4ROM Programming Adapter render](4ROM_programming_adapter.jpg)
-![4ROM_78802 on Programming Adapter render](4ROM_78802.programming.jpg)
 
