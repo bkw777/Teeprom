@@ -53,7 +53,7 @@ The same programming adapter is used for both 100 and 78802.
 ![4ROM_78802 on Programming Adapter render](4ROM_78802.programming.jpg)
 
 
-##To write to the chip:  
+## To write to the chip:  
 * Put the 4ROM programming adapter into a programmer.  
 * Remove the 4ROM PCB from the carrier and connect it to the programming adapter by the center pins. You don't need to push the pcb all the way down. Just get the pins into the holes at all and that is good. It should be stiff.  
 * Select the desired bank number with the slide switch on the 4ROM.  
@@ -61,7 +61,7 @@ The same programming adapter is used for both 100 and 78802.
 * Write a single 32K rom image.
 
 
-###Test the pin connections  
+### Test the pin connections  
 Just to verify that the board is soldered correctly and all of the programming adapter pins are making a good connection.  
 It should say pins 1 and 2 are bad, and nothing else.  
 ```
@@ -77,7 +77,7 @@ If/when minipro is updated to fix that bug, then this test should say bad contac
 Similarly if you're using the Windows app look for pins 2 and 3 to be missing but no other errors.  
 The missing pins are because the two highest address bits A15 and A16 that exist on the flash chip are not connected to anything but the bank-select logic on the 4ROM board.
 
-###Erase the whole chip
+### Erase the whole chip
 Only one time before writing any the individual banks. You will be telling the programmer NOT to erase the chip automatically before writing the individual banks, so you want to do it one time before hand just to clean the slate.
 ```
 $ minipro -p 'SST39SF010A' -u -E
@@ -87,7 +87,7 @@ Erasing... 0.40Sec OK
 $
 ```
 
-###Write one bank  
+### Write one bank  
 Select position "1" on the slide switch, and write one 32K rom image, with options to tell minipro NOT to erase the chip before the write, to unlock the chip before writing, to re-lock it after writing, and ignore the size mis-match from writing only 32K when 128K is expected.  
 ```
 $ minipro -p 'SST39SF010A' -u -P -s -e -w MULTIPLAN.rom
