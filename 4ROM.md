@@ -60,6 +60,8 @@ The same programming adapter is used for both 100 and 78802.
 * Tell the programmer to use device "SST39SF010A", ignore size mismatch, not to automatically erase the whole chip before writing.  
 * Write a single 32K rom image.
 
+The following is using a TL-866II+ programmer and the open source [minipro](https://gitlab.com/DavidGriffith/minipro) software.
+(If buying a new programmer, be aware minipro does not support the new T48 or T56 programmers, only TL-866II+ and older.)
 
 ### Test the pin connections  
 Just to verify that the board is soldered correctly and all of the programming adapter pins are making a good connection.  
@@ -78,7 +80,7 @@ Similarly if you're using the Windows app look for pins 2 and 3 to be missing bu
 The missing pins are because the two highest address bits A15 and A16 that exist on the flash chip are not connected to anything but the bank-select logic on the 4ROM board.
 
 ### Erase the whole chip
-Only one time before writing any the individual banks. You will be telling the programmer NOT to erase the chip automatically before writing the individual banks, so you want to do it one time before hand just to clean the slate.
+Normally the programmer would automatically erase the whole chip before each write, but in this case we don't want that because we want to be able to write one 32K bank without erasing the other 3 banks. But we do still want to erase the whole chip one time before the individual bank writes. So do it here as a seperate operation.
 ```
 $ minipro -p 'SST39SF010A' -u -E
 Found TL866II+ 04.2.132 (0x284)
@@ -88,7 +90,12 @@ $
 ```
 
 ### Write one bank  
-Select position "1" on the slide switch, and write one 32K rom image, with options to tell minipro NOT to erase the chip before the write, to unlock the chip before writing, to re-lock it after writing, and ignore the size mis-match from writing only 32K when 128K is expected.  
+Select position "1" on the slide switch, and write one 32K rom image.  
+The command line flags here say:  
+**-e** do not erase the chip before writing  
+**-u** un-protect the chip before writing  
+**-P** protect the chip after writing  
+**-s** non-fatal warning for the size mis-match from writing only 32K when 128K is expected  
 ```
 $ minipro -p 'SST39SF010A' -u -P -s -e -w MULTIPLAN.rom
 Found TL866II+ 04.2.132 (0x284)
