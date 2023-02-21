@@ -62,20 +62,21 @@ The following is using a TL-866II+ programmer and the open source [minipro](http
 
 ### Test the pin connections  
 Just to verify that the board is soldered correctly and all of the programming adapter pins are making a good connection.  
-It should say pins 1 and 2 are bad, and nothing else.  
+It should say pins 2 and 3 are bad, and nothing else.  
 ```
 $ minipro -p 'SST39SF010A' -z
 Found TL866II+ 04.2.132 (0x284)
-Bad contact on pin:1
 Bad contact on pin:2
+Bad contact on pin:3
 $
 ```
 
-Really it's pins 2 and 3 that are not connected, but there is a bug in the minipro pin test, where each NC pin throws off the subsequent pin numbers. Pin 1 is a NC pin, so pins 2 and 3 end up saying 1 and 2.  
-If/when minipro is updated to fix that bug, then this test should say bad contact on pins 2 and 3.  
-(I have already submitted a patch but it's not merged yet.)
-Similarly if you're using the Windows app look for pins 2 and 3 to be missing but no other errors.  
-The missing pins are because the two highest address bits A15 and A16 that exist on the flash chip are not connected to anything but the bank-select logic on the 4ROM board.
+The missing pins are the two highest address bits A15 and A16, which exist on the chip but are only connected to bank-select logic on the 4ROM board, not to the programmer pins.
+
+(Note: if using the "minipro" program as shown here, there is currently a [bug](https://gitlab.com/DavidGriffith/minipro/-/issues/283) in the pin test routine where this will say pins 1 & 2 instead of 2 & 3.  
+A [fix](https://gitlab.com/DavidGriffith/minipro/-/merge_requests/220) has already been submitted but not merged yet.  
+So if you see bad contact on pins 1 & 2 instead of 2 & 3, this is probably normal and you probably just have a version of minipro that isn't fixed yet.  
+For the Windows app or any other programmer you only want to see pins 2 & 3 with missing connection)
 
 ### Erase the whole chip
 Normally the programmer would automatically erase the whole chip before each write, but in this case we don't want that because we want to be able to write one 32K bank without erasing the other 3 banks. But we do still want to erase the whole chip one time before the individual bank writes. So do it here as a seperate operation.
