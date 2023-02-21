@@ -1,10 +1,8 @@
 # 4ROM
-or
-# "Teeprom/Meeprom 2.0, The Overkilling"
 
 ### 4ROM_100 parts:  
-PCB (pending verification)  
-BOM https://www.digikey.com/short/whn7w258  
+PCB https://www.pcbway.com/project/shareproject/4ROM_100_multi_option_rom_module_for_TRS_80_Model_100_102_200_93cfa6c8.html  
+BOM https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=66e12c3f20 or https://www.digikey.com/short/whn7w258  
 Carrier http://shpws.me/SGGB  
 
 ### 4ROM_78802 parts:  
@@ -42,15 +40,13 @@ The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 2
 
 The same programming adapter is used for both 100 and 78802.
 
-<!-- 
 ![4ROM_100 render](4ROM_100.jpg)
-![4ROM_100 Programming Adapter render](4ROM_programming_adapter.jpg)
 ![4ROM_100 on Programming Adapter render](4ROM_100.programming.jpg)
--->
 
 ![4ROM_78802 render](4ROM_78802.jpg)
-![4ROM Programming Adapter render](4ROM_programming_adapter.jpg)
 ![4ROM_78802 on Programming Adapter render](4ROM_78802.programming.jpg)
+
+![4ROM Programming Adapter render](4ROM_programming_adapter.jpg)
 
 
 ## To write to the chip:  
@@ -76,6 +72,7 @@ $
 
 Really it's pins 2 and 3 that are not connected, but there is a bug in the minipro pin test, where each NC pin throws off the subsequent pin numbers. Pin 1 is a NC pin, so pins 2 and 3 end up saying 1 and 2.  
 If/when minipro is updated to fix that bug, then this test should say bad contact on pins 2 and 3.  
+(I have already submitted a patch but it's not merged yet.)
 Similarly if you're using the Windows app look for pins 2 and 3 to be missing but no other errors.  
 The missing pins are because the two highest address bits A15 and A16 that exist on the flash chip are not connected to anything but the bank-select logic on the 4ROM board.
 
