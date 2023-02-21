@@ -1,5 +1,7 @@
 # 4ROM
 
+![](4ROM.jpg)
+
 ### 4ROM_100 parts:  
 PCB https://www.pcbway.com/project/shareproject/4ROM_100_multi_option_rom_module_for_TRS_80_Model_100_102_200_93cfa6c8.html  
 BOM https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=66e12c3f20 or https://www.digikey.com/short/whn7w258  
