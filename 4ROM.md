@@ -56,7 +56,7 @@ The same programming adapter is used for both 100 and 78802.
 * Tell the programmer to use device "SST39SF010A", ignore size mismatch, not to automatically erase the whole chip before writing.  
 * Write a single 32K rom image.
 
-The following is using a TL-866II+ programmer and the open source [minipro](https://gitlab.com/DavidGriffith/minipro) software.
+The following is using a TL-866II+ programmer and the open source [minipro](https://gitlab.com/DavidGriffith/minipro) software.  
 (If buying a new programmer, be aware minipro does not support the new T48 or T56 programmers, only TL-866II+ and older.)
 
 ### Test the pin connections  
