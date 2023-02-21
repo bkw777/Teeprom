@@ -30,10 +30,9 @@ The disadvantages are:
 * The board has more parts and is more difficult to solder.
 
 There are 2 versions so far,  
-'''4ROM_100''' is only for TANDY 100, 102, & 200, same as Teeprom. This version is not tested yet.  
+'''4ROM_100''' is only for TANDY 100, 102, & 200, same as Teeprom.
 
-'''4ROM_78802''' is for everything else, Same as Meeprom. Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.  
-This version IS tested and working.
+'''4ROM_78802''' is for everything else, Same as Meeprom. Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.
 
 The parts other than the PCB are the same for both 100 and 78802 versions.  
 The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 200 have a non-standard pinout. The 78802 version provides a standard 27C256 pinout.  
