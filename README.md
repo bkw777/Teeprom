@@ -19,6 +19,7 @@ Virtual 27C32 & virtual Molex 78802 carrier
 # 4ROM
 [4ROM](4ROM.md)  
 Version of Teeprom & Meeprom that uses a 29F010 flash instead of a 28C256 eeprom, and provides 4 32k rom images.
+![](4ROM_100.jpg)
 
 # References
 [Molex78802_Module](https://github.com/bkw777/Molex78802_Module)  
