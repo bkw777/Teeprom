@@ -41,9 +41,11 @@ The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 2
 
 The same programming adapter is used for both 100 and 78802.
 
+![4ROM_100 schematic](4ROM_100.svg)
 ![4ROM_100 render](4ROM_100.jpg)
 ![4ROM_100 on Programming Adapter render](4ROM_100.programming.jpg)
 
+![4ROM_78802 schematic](4ROM_78802.svg)
 ![4ROM_78802 render](4ROM_78802.jpg)
 ![4ROM_78802 on Programming Adapter render](4ROM_78802.programming.jpg)
 
