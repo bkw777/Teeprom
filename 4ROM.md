@@ -24,7 +24,7 @@ Select ENIG copper finish so the castellated edge contacts and programming adapt
 Change the min tacks/spaces option to 6/6mils. The PCBWAY web site automatically selects 5/5 for this board for some reason, but there are no such thin traces or spaces.
 
 The advantages over the original Teeprom are:  
-* The flash chip is cheaper and more readily available. The 32K eeprom are now about $10 each and there is only one brand still being made. 128K flash is $1, and there are multiple brands and versions still in production.  
+* The flash chip is cheaper and more readily available. The 32K eeprom are now about $15 each and there is only one brand still being made. 128K flash is $1.40, and there are multiple brands and versions still in production.  
 * The programming adapter is cheaper to buy and simpler to use than the soic test clip and wires needed for Teeprom.
 * Holds four 32K rom images instead of one.  
 
@@ -34,7 +34,8 @@ The disadvantages are:
 There are 2 versions so far,  
 '''4ROM_100''' is only for TANDY 100, 102, & 200, same as Teeprom.
 
-'''4ROM_78802''' is for everything else, Same as Meeprom. Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.
+'''4ROM_78802''' is for everything else, Same as Meeprom.  
+Some examples: TANDY 600, Epson PX-4 & PX-8, general industrial applications, most anywhere the Molex 78805 socket is found.
 
 The parts other than the PCB are the same for both 100 and 78802 versions.  
 The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 200 have a non-standard pinout. The 78802 version provides a standard 27C256 pinout.  
@@ -73,11 +74,11 @@ Bad contact on pin:3
 $
 ```
 
-The missing pins are the two highest address bits A15 and A16, which exist on the chip but are only connected to bank-select logic on the 4ROM board, not to the programmer pins.
+The missing pins are the two highest address bits A15 and A16, which exist on the chip but aren't connected to the outside world. They are only connected to bank-select logic on-board.  
 
-(Note: if using the "minipro" program as shown here, there is currently a [bug](https://gitlab.com/DavidGriffith/minipro/-/issues/283) in the pin test routine where this will say pins 1 & 2 instead of 2 & 3.  
+(Note: if using the [minipro](https://gitlab.com/DavidGriffith/minipro) program as shown here, there is currently a [bug](https://gitlab.com/DavidGriffith/minipro/-/issues/283) in the pin test routine where this will say pins 1 & 2 instead of 2 & 3.  
 A [fix](https://gitlab.com/DavidGriffith/minipro/-/merge_requests/220) has already been submitted but not merged yet.  
-So if you see bad contact on pins 1 & 2 instead of 2 & 3, this is probably normal and you probably just have a version of minipro that isn't fixed yet.  
+So if you see bad contact on pins 1 & 2 instead of 2 & 3, this is normal at this time. Or you could use the [fixed version](https://gitlab.com/bkw777/minipro) until the main version updates.
 For the Windows app or any other programmer you only want to see pins 2 & 3 with missing connection)
 
 ### Erase the whole chip
