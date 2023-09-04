@@ -1,6 +1,6 @@
 # 4ROM
 
-![](4ROM.jpg)
+![](ref/4ROM.jpg)
 
 ### 4ROM_100 parts:  
 PCB https://www.pcbway.com/project/shareproject/4ROM_100_multi_option_rom_module_for_TRS_80_Model_100_102_200_93cfa6c8.html  
@@ -42,15 +42,15 @@ The difference is only in the pinout of the edge connectors. TANDY 100, 102, & 2
 
 The same programming adapter is used for both 100 and 78802.
 
-![4ROM_100 schematic](4ROM_100.svg)
-![4ROM_100 render](4ROM_100.jpg)
-![4ROM_100 on Programming Adapter render](4ROM_100.programming.jpg)
+![4ROM_100 schematic](PCB/out/4ROM_100.svg)
+![4ROM_100 render](PCB/out/4ROM_100.jpg)
+![4ROM_100 on Programming Adapter render](PCB/out/4ROM_100.programming.jpg)
 
-![4ROM_78802 schematic](4ROM_78802.svg)
-![4ROM_78802 render](4ROM_78802.jpg)
-![4ROM_78802 on Programming Adapter render](4ROM_78802.programming.jpg)
+![4ROM_78802 schematic](PCB/out/4ROM_78802.svg)
+![4ROM_78802 render](PCB/out/4ROM_78802.jpg)
+![4ROM_78802 on Programming Adapter render](PCB/out/4ROM_78802.programming.jpg)
 
-![4ROM Programming Adapter render](4ROM_programming_adapter.jpg)
+![4ROM Programming Adapter render](PCB/out/4ROM_programming_adapter.jpg)
 
 
 ## To write to the chip:  
@@ -74,9 +74,9 @@ Bad contact on pin:3
 $
 ```
 
-"Bad contact" on pins 2 & 3 is expected. Those are the 2 highest address bits A15 and A16, which aren't connected to the outside world. They are only connected to the bank-select logic on the board. The programmer can't see them, and says so.
+"Bad contact" on pins 2 & 3 is expected. Those are the 2 highest address bits A15 and A16, which aren't connected to the outside world. They are only connected to the bank-select logic on the board.
 
-(If you see pins 1 & 2 instead of 2 & 3, update [minipro](https://gitlab.com/DavidGriffith/minipro) to get this [fix](https://gitlab.com/DavidGriffith/minipro/-/merge_requests/220).  
+(If you see pins 1 & 2 instead of 2 & 3, then update [minipro](https://gitlab.com/DavidGriffith/minipro) to get this [fix](https://gitlab.com/DavidGriffith/minipro/-/merge_requests/220).  
 
 If you see anything else, inspect the pin connections and solder work. Try pushing the pcb futher down onto the programming adapter to make the pins bind up a little tighter. The holes in the 4ROM are intentionally a little bit closer together than the exact 2.0mm of the pins on the programming adapter, so the pins bind up tighter the further down you push the 4ROM. It should be essentially impossible to push it all the way down, and don't try, but the further you go the stronger the pin contacts. Test the solder work by touching a sharp needle tip probe to the tops of the chip legs right where they enter the plastic body, and the other probe to one of the programmer adapter holes.
 
