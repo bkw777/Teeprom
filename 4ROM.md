@@ -3,26 +3,28 @@
 ![](ref/4ROM.jpg)
 
 ### 4ROM_100 PCB
-PCB https://www.pcbway.com/project/shareproject/4ROM_100_multi_option_rom_module_for_TRS_80_Model_100_102_200_93cfa6c8.html  
+[PCBWAY](https://www.pcbway.com/project/shareproject/4ROM_100_multi_option_rom_module_for_TRS_80_Model_100_102_200_93cfa6c8.html)
 
 ### 4ROM_78802 PCB
-PCB https://www.pcbway.com/project/shareproject/4ROM_78802_714ecf32.html  
+[PCBWAY](https://www.pcbway.com/project/shareproject/4ROM_78802_714ecf32.html)
 
 ### BOM
-BOM https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=66e12c3f20 or https://www.digikey.com/short/whn7w258  
+[Mouser](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=66e12c3f20)  
+[DigiKey](https://www.digikey.com/short/whn7w258)
 
 ### Carrier
-Carrier http://shpws.me/SGGB  
+[Shapeways](http://shpws.me/SGGB)
 
 ### Programming Adapter
-PCB https://www.pcbway.com/project/shareproject/4ROM_Programming_Adapter_fc156337.html  
-BOM https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=a770931c82 or https://www.digikey.com/short/f3jhw9v1
+PCB: [PCBWAY](https://www.pcbway.com/project/shareproject/4ROM_Programming_Adapter_fc156337.html)  
+BOM: [Mouser](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=a770931c82) or [DigiKey](https://www.digikey.com/short/f3jhw9v1)
 
-This is a version of Teeprom and Meeprom that uses a 128K 29F010 flash instead of a 32K 28C256 eeprom.
+4ROM is a version of Teeprom and Meeprom that uses a 128K 29F010 flash instead of a 32K 28C256 eeprom.
 
 When ordering the PCB:  
-* Select ENIG copper finish so that the castellated edge contacts and programming adapter contacts will be gold plated.  
-* Change the min tacks/spaces option to 6/6mils. The PCBWAY web site automatically selects 5/5 for this board for some reason, but there are no such thin traces or spaces.
+* Select ENIG copper finish so that the castellated edge contacts and programming adapter contacts will be gold plated.
+  The programming adapter does not need ENIG, just the 4ROM itself.
+* Change the min tacks/spaces option to 6/6mils. The PCBWAY web site may automatically select 5/5, but there are no such thin traces or spaces, and there is no reason to pay the extra for that. All tracks and spaces are 0.2mm minimum, which is almost 8 mils.
 
 The advantages over the original Teeprom are:  
 * The flash chip is cheaper and more readily available. The 32K eeprom are now about $15 each and there is only one manufacturer. 128K flash is $1.40, and there are multiple manufacturers.  
@@ -30,7 +32,7 @@ The advantages over the original Teeprom are:
 * Holds four 32K rom images instead of one.  
 
 The disadvantages are:  
-* The board has more parts and finer pitch part and is more difficult to solder.
+* The board has more parts and finer pitch parts and is more difficult to solder.
 
 There are 2 versions,  
 '''4ROM_100''' is only for TANDY 100, 102, & 200, same as Teeprom.
