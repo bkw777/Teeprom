@@ -16,10 +16,9 @@ Virtual 27C32 & virtual Molex 78802 carrier
 [MEE2732](MEE2732.md)  
 24-pin 2732 pinout
 
-# 4ROM
-[4ROM](4ROM.md)  
+# M4ROM
+[M4ROM](https://github.com/bkw777/M4ROM)  
 Version of Teeprom & Meeprom that uses a 29F010 flash instead of a 28C256 eeprom, and provides 4 32k rom images.
-![](PCB/out/4ROM_100.jpg)
 
 # References
 [Molex78802_Module](https://github.com/bkw777/Molex78802_Module)  
