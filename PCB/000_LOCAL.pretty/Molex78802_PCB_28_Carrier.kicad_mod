@@ -1,0 +1,333 @@
+(footprint "Molex78802_PCB_28_Carrier"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Castellated edge contacts to fit Molex 78805 Socket")
+	(property "Reference" "J?"
+		(at -1.905 0 270)
+		(layer "Dwgs.User")
+		(hide yes)
+		(uuid "025728d6-7442-4db4-8849-293fcd928e22")
+		(effects
+			(font
+				(size 1.2065 1.2065)
+				(thickness 0.127)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Molex78802_PCB_28_Carrier"
+		(at 1.27 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4271c049-c877-46b5-a858-4b971a95b931")
+		(effects
+			(font
+				(size 1.2065 1.2065)
+				(thickness 0.1016)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9e470c2-886a-4337-9ccf-f7e7b1018d3b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57194276-4742-434c-a430-fc1f246a7061")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(solder_mask_margin 0.0508)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_rect
+		(start -5 -19.1)
+		(end 5 -18.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "21943852-bfe9-4261-83ef-f13c766012ee")
+	)
+	(fp_rect
+		(start -5 18.1)
+		(end 5 19.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "76787539-8bb4-4a6f-80ab-266b507a6ffb")
+	)
+	(fp_rect
+		(start -7.2 -18.3)
+		(end 7.2 18.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "356058f2-2a93-4f28-8316-06271d1673d7")
+	)
+	(fp_line
+		(start -6 -19)
+		(end -6.3 -19.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "5ced5ffc-dd9d-49ee-9adf-2e7a96d1feaa")
+	)
+	(fp_line
+		(start -6 -19)
+		(end -6 -19.9)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "9b9224b2-33c1-447f-ae48-ead454cb6faa")
+	)
+	(fp_line
+		(start -6 -19)
+		(end -5.7 -19.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "657d25d9-1afa-437b-9e7b-ecde3968625e")
+	)
+	(fp_line
+		(start -6 -18.3)
+		(end -6.3 -18)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "e820b968-63e3-4fca-bdf8-02420615eebe")
+	)
+	(fp_line
+		(start -6 -18.3)
+		(end -6 -17)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "430057fc-2df5-4576-8ccc-1dbb27314c29")
+	)
+	(fp_line
+		(start -6 -18.3)
+		(end -5.7 -18)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "d198669f-5dab-440e-b2f3-d0e1a65db8ef")
+	)
+	(fp_line
+		(start -6 -17)
+		(end -5.5 -17)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "5867566e-9794-4380-ad27-f93110f9d002")
+	)
+	(fp_line
+		(start -5 19)
+		(end 5 19)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "ccde755d-016c-4004-a263-8d030b58eed5")
+	)
+	(fp_line
+		(start -4 -19)
+		(end -4.3 -19.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "68c8b6be-fcb9-488e-a2fa-930b3a15390d")
+	)
+	(fp_line
+		(start -4 -19)
+		(end -4 -19.9)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "351a39c5-1ea4-4dac-ad2e-29e34ebfa586")
+	)
+	(fp_line
+		(start -4 -19)
+		(end -3.7 -19.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "8bfbd2a0-f3ab-4470-a2c7-8961618777d6")
+	)
+	(fp_line
+		(start -4 -18.1)
+		(end -4.3 -17.8)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "47927391-df6b-4953-b3d6-7a172e06d2c7")
+	)
+	(fp_line
+		(start -4 -18.1)
+		(end -4 -17.5)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "5d42ee29-23a8-4860-8ed4-7e55c83feef3")
+	)
+	(fp_line
+		(start -4 -18.1)
+		(end -3.7 -17.8)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "c058121b-a486-4835-a038-2d4944b48339")
+	)
+	(fp_line
+		(start -4 -17.5)
+		(end -3.5 -17.5)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "b9c5da4c-0e0f-49b0-b5af-da5c32a7351f")
+	)
+	(fp_line
+		(start 5 -19)
+		(end -5 -19)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "7502f215-8edc-44a1-8ab5-29fe1b381d32")
+	)
+	(fp_line
+		(start 7.6 -18.3)
+		(end 7.6 18.3)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "2d8fc959-7da4-4e47-a24d-1a61f199d584")
+	)
+	(fp_poly
+		(pts
+			(xy -8.3 -17.5) (xy -6.7 -19.1) (xy -6.7 -18.3) (xy -7.2 -18.3) (xy -7.2 18.3) (xy 7.2 18.3) (xy 7.2 -18.3)
+			(xy -6.7 -18.3) (xy -6.7 -19.1) (xy 8.3 -19.1) (xy 8.3 19.1) (xy -8.3 19.1)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.CrtYd")
+		(uuid "378a19f8-8a5d-4004-be84-954357263f49")
+	)
+	(fp_rect
+		(start -5 -19.1)
+		(end 5 -18.1)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.CrtYd")
+		(uuid "c0f44cc6-4439-49fd-9ec9-fbdb873cba32")
+	)
+	(fp_rect
+		(start -5 18.1)
+		(end 5 19.1)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.CrtYd")
+		(uuid "e20ac885-4e92-4d40-b3f7-e1ee0141175a")
+	)
+	(fp_text user "10.0 x 1.0 retainer wedges on top"
+		(at -3.5 -17.5 0)
+		(layer "Dwgs.User")
+		(uuid "20b21d5f-812d-4f6a-a2dc-50edf9331f3c")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.02)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "0.7 border on bottom - 36.6 x 14.4 x 1.5 usable bottom"
+		(at -5.5 -17 0)
+		(layer "Dwgs.User")
+		(uuid "50ba1276-1d6a-4ac5-892c-74fdd40ff662")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.02)
+			)
+			(justify left)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/Molex78802_PCB_28.step"
+		(offset
+			(xyz 0 0 -0.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)
