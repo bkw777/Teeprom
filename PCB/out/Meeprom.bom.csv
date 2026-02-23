@@ -1,0 +1,4 @@
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet","MPN","Description"
+"C1","1","1u","","","","000_LOCAL:C_0805","datasheets/CL21B105KAFNNNE.pdf","CL21B105KAFNNNE","C 1u 0805"
+"R1","1","47k","","","","000_LOCAL:R_0805","datasheets/dcrcwe3.pdf","CRCW080547K0FKEA","R 47K 1% 0.25W 0805"
+"U1","1","28C256 / FM18W08","","","","000_LOCAL:SOIC-28W","datasheets/28C256.pdf","AT28C256-15SU","EEPROM 32Kx8 Parallel 5v 28-SOIC"
